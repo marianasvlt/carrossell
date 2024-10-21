@@ -1,0 +1,120 @@
+@font-face {
+    font-family: planta;
+    src: url(./fontes/Plante.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cc8bb8;
+    height: 100vh; 
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2FoYzhuMDF1ejZweHExNGs0NWJwOG5sZThpZmZvMnA2cHhwY2k0ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t2aAdTgnU9Ie6jvG0W/giphy.webp'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+
+h1 {
+    font-family: planta;
+    font-weight: 900;
+    font-size: 5em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    /* decidir como o conteúdo fora do container (ou fora do elemento) vai se comportar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: #fcfcfc;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background-color: #c060b3;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem {
+    width: 12.5%;
+    transition: all 1s ease;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -12.5%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -25%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -37.5%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -62.5%;
+}
+
+#imagem7:checked ~.img1{
+    margin-left: -75%;
+}
+
+#imagem8:checked~.img1{
+    margin-left: -87.5%;
+}
+
+footer{
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
